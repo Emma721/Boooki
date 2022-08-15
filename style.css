@@ -1,0 +1,756 @@
+/*contenu qui s'applique au body pour toute version*/
+
+
+
+
+body {
+    font-family: "raleway"; 
+    margin: 0px ;
+    margin-top: 1%;
+    width: 100%;
+    margin-left: 0%;
+    justify-content: column;
+    justify-content: space-between;
+  
+  }
+
+  h1 {
+    color:black;
+    font-weight: 900;
+    font-size :18px;
+  }
+  h2 {
+    color:black;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 0px;
+    margin-bottom: 25px;
+
+  
+  }
+
+ h3 {
+    font-weight: 700;
+    font-size : 15px;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+    h4 {
+        font-weight: 700;
+        font-size : 11px;
+        margin-block-start: 0;
+    }
+
+ h5 {
+    font-weight: 400;
+    font-size : 10px;
+    margin: 0px;
+    }
+
+  p {
+    color:black;
+    font-size: 10px;
+    
+  }
+
+  .etoiles {
+    display: flex;
+    justify-content: row;}
+
+
+
+  .lespluspopulaires .resize{ /*the SAME image size applies to both hebergements and les plus populaires*/
+        width: 130px;
+        height:100.66px ;
+        padding: 0px;
+        contain: content;
+       
+        
+      }
+    
+            img {
+                    width: 100%;
+                    height: auto;
+                    vertical-align: middle;
+                    object-fit: cover;
+                    contain: content;
+                    border-radius: 20px; /* le he anadido border redondeados pero tienes q cambiarlos a solo dos esquinas /4 */
+                }
+    
+                
+
+/*para cambiar la talla de todas las imagenes de las cards de hebergements*/
+.hebergements .resize {
+    width: 170px;
+    height:106.66px ;
+    padding: 3%;
+
+}
+
+/*para controlar lo que pasa dentro de cada card d'hebergements */
+.hebergements .card {
+    width: 180px; 
+    height: auto;
+    margin-bottom:10px;
+     
+}
+
+
+ /*para controlar la disposicion general de las cards dentro de el cuadrado gris*/
+.hebergements-cards {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    align-content: flex-start;
+    justify-content: space-around;
+    contain: content; 
+             
+}
+
+
+
+
+        
+                .card { 
+                    display:block; 
+                    width: 160px; 
+                    height: px;
+                    margin: Opx;
+                    background-color:  rgba(255,255,255,1);
+                    border: 3px rgba(255,255,255,1);
+                    border-radius: 20px;
+                    justify-content:space-between;
+                    object-fit: cover;
+                    margin: 0% ; /*aplica en margin los 4? valores para tenerlos bien */
+                          
+                } 
+                
+               
+              
+    
+
+    
+.card-etoiles {
+    color: #0065FC;
+    font-size: 10px;
+    margin-top: 4%;
+    contain: content;
+    
+}
+
+.card-double {
+    display: flex; 
+    flex-direction: column;
+    
+}
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+   justify-content: stretch;
+   justify-content: flex-start;
+
+}
+
+.card-container h4, h5 {
+    line-height: 0px;
+    margin-top: 3%;
+   
+
+    
+}
+
+.hebergements .card-container {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: stretch;
+    margin-left: 7px;
+    margin-top: 5px;
+
+}
+.lespluspopulaires .card {
+    display: flex; 
+    flex-direction: row;
+    background-color:  rgba(255,255,255,1);
+    border: 3px rgba(255,255,255,1);
+    border-radius: 20px;
+    justify-content:stretch;
+    margin-left: 5% ; /*aplica en margin los 4? valores para tenerlos bien */
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0px 5px 20px #999;
+ }
+
+ 
+ .lespluspopulaires .card-container {
+    display: flex; 
+    flex-direction: column;
+    width: 151.23px;
+    contain: content;
+    justify-content: flex-start;
+    margin-left: 5px;
+    margin-top:5px;
+ }
+
+  /* esto es para que haya line height en el containter, porque sino se te ponen las letras del h4 las unas sobre las
+  otras; puesto que es una frase larga*/
+ .lespluspopulaires .card-container h4, h5 {
+    line-height: 1.15;
+ }
+
+/*controla la medida de la card */
+ .lespluspopulaires .card {
+    display: flex;
+    justify-content: row;
+    height: 100px;
+    width: 250px;
+    padding: 4px;
+    margin-bottom: 10%;
+   
+ }
+
+ .activites #cardvertical { 
+    box-shadow: 0px 5px 20px #999;
+    width: 171px;
+    height: 251.255px;
+    
+}
+
+
+.activites  #cardfortdepomegues { 
+    box-shadow: 0px 5px 20px #999;
+    width: 200px;
+    height: 131px;
+    margin-bottom: 5%;
+    
+}
+
+.activites  #cardilesdufrioul { 
+    box-shadow: 0px 5px 20px #999;
+    width: 200px;
+    height: 110.55px;
+    
+}
+
+.activites  #cardnotredamedelagarde { 
+    box-shadow: 0px 5px 20px #999;
+    width: 200px;
+    height: 130px;
+    margin-bottom: 5%;
+    
+}
+
+.activites  #cardparclongchamp { 
+    box-shadow: 0px 5px 20px #999;
+    width: 200px;
+    height: 130px;
+    
+}
+
+
+
+.activites-card { /*cambialo a column para la version mobile*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+}
+
+
+
+              /*here I want to create a class that will apply the same size to all the images of the hebergement part and les plus populaires part*/
+                    
+                  
+    
+
+/*HEADER*/
+header {
+    margin-left: 2%;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 7%;
+    margin-top: 3%;
+
+        }
+
+   
+        .banner ul { 
+            display: flex ; 
+            list-style: none;
+            justify-content : stretch; 
+            justify-content: flex-end;;
+            
+            }
+       
+       .banner ul li {
+        font-size: 13px;
+        margin-left: 50px;
+       }
+       
+            .logo {
+            max-width: 68px;
+            max-height:30px ;
+            padding-left:0%;
+            margin-left: 2%;
+            margin-top: 1%;
+            }
+
+            .banner a{
+                color: black;
+            }
+
+            .banner a:link {
+                text-decoration: none; /* this removes the underlines from links*/
+                
+            
+            }
+            
+            .banner a:hover .overline-box {
+                color: #0065FC;
+                border-top: 4px solid #0065FC;
+                padding:35px;
+               
+            }
+           
+
+         
+
+            
+
+ a {
+    display: block;
+    text-decoration: none;
+    color: black
+ }           
+
+
+/*this one keeps the ul of filters aligned horizontaly*/
+header ul {
+        display: flex;
+        list-style: none; 
+        justify-content: flex-start;
+        justify-content: space-between;
+        gap: 1px;
+
+        
+    }
+
+header ul li {
+    display: inline-block;
+    vertical-align: middle;
+    border : black;
+    
+   
+
+}
+
+
+
+header ul {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+
+header ul li {
+    border : black ;
+}
+
+
+ .search-bar i {
+    font-size: 14px;
+    color:black;
+    border-radius: 10px 0px 0px 10px;
+    background-color:#F2F2F2 ;
+    padding: 17px;
+    line-height: 0px;
+
+   
+
+}
+
+
+.search-bar {
+    
+    width: 38%;
+    margin-left: 0px;
+    border-radius: 20px 20px 20px 20px ;
+    height: 8%;
+    width:60%;
+    display: inline-block;
+    
+}
+
+.search-bar input {
+    border: none;
+    width:35%;
+    height: 29px;
+    font-size:11pt;
+    margin-right: 0;   
+    font-weight: 900;
+}
+
+
+
+button {
+    font-size: 14px;
+    color: white;
+    background: #0065FC;
+    border: none;
+    border-radius: 0px 10px 10px 0px ;
+    width: 20%;
+    padding: 2.5%;
+    font-weight: 900;
+  
+    
+   
+
+}
+
+
+.form {
+    height:auto;
+    width: 100px;
+    font-size: 10px;
+    display: flex;
+    justify-content: row;
+    align-items: baseline;
+}
+
+ 
+/* INFO OF HEADER */
+
+.info i {
+    color: #0065FC;
+    font-size: 10px;
+    background-color:white;
+    border-radius: 50%;
+    padding: 5px;
+    border-color: #F2F2F2;
+    border-width: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+  
+.info {
+    padding: 0px;
+}
+
+.section-filtres ul{
+    width: 66%;
+}
+
+.section-filtres ul a:hover {
+    background-color: lightgrey;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.section-filtres ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.section-filtres i {
+    display: inline-block;
+    border-radius: 50%;
+    background-size: 50px; 
+    padding: 10px;
+    color: blue;
+    margin-right: 2px;
+    font-size: 9px;
+    background-color: rgb(216, 239, 246);;
+
+}
+.section-filtres li {
+    background-color: white;
+    border-color: rgba(242,242,242,1);
+    border-style:solid;
+    border-width: 1px;
+  
+ 
+}
+
+.section-filtres #presentation-filtres {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border: none
+ 
+}
+
+.section-filtres h3 { /*esta es la que hace que se quede alineado con los iconos !*/
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-left: 4px;
+  
+} 
+
+
+
+li  {  /*intenta hacer el borde redondeado */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: baseline;
+    border-color: black;
+    border-radius: 20px;
+   
+   
+}
+
+
+
+
+/*MAIN*/
+main {
+    display: flex;
+    flex-direction:row;
+    justify-content:strecth;
+    margin-left: 3%;
+    
+     margin-bottom: 5%;
+    margin-top: 0%;
+
+
+   
+    }
+
+  
+    
+.hebergements {  /* esto es para posicionar y poner el fondo gris de hebergements*/
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgba(242,242,242,1);
+    border: 3px rgba(242,242,242,1);
+    border-radius: 20px;
+    width: 60%;
+    align-content: flex-start;
+    height: 50%;
+    margin-right: 2.5%;
+ 
+
+}
+
+
+
+.hebergements h1 {
+    width: 0%;
+}
+
+.hebergements h3 {
+    margin: 15px;
+    margin-top: 6%;
+   
+}
+
+
+
+.hebergements img {
+    border-radius: 20px 20px 0px 0px ;
+    
+}
+
+ 
+ .lespluspopulaires {  
+            display: flex; 
+            flex-direction: column;
+            flex-wrap: wrap;
+            width:30%;
+            margin-right: 0;
+            background-color: rgba(242,242,242,1);
+            border: 3px rgba(242,242,242,1);
+            border-radius: 20px;
+            
+            
+        }
+
+        
+.rowone   { /*esta es la que hace que se quede alineado con los iconos !*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 7%;
+    margin-top: 11%;
+
+  }
+
+  .rowone i {
+    font-size: 14px;
+  }
+ 
+
+     
+         .lespluspopulaires img {
+            border-radius: 20px 0px 0px 20px ;
+            
+         }
+         
+      
+        
+
+
+
+
+    /*ACTIVITES*/            
+
+.activites {
+    margin-left: 0%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 0px;
+    padding: 0px;
+    margin-bottom: 5%;
+    
+}
+
+#ancre-activites {
+    margin-bottom:20px;
+    margin-left: 3%;;
+}
+
+.activites h4 {
+    margin: 10px 10px 3px 13px;
+}
+    .activites img {
+        border-radius: 20px 20px 0px 0px ;
+        margin: 0;
+    }
+
+    .vertical {
+        width: 302px;
+        height: 444.51px;
+        object-fit: cover;
+    
+    }
+
+    #fortdepomegues {
+        width: 302px;
+        height: 215.53px;
+        object-fit: cover;
+    }
+    #ilesdufrioul {
+        width: 302px;
+        height: 165.1px;
+        object-fit: cover;
+    }
+    #notredamedelagarde {
+        width: 302px;
+        height: 195.12px;
+        object-fit: cover;
+
+    }
+    #parclongchamp {
+        width: 302px;
+        height: 208.98;
+        object-fit: cover;
+    }
+
+    .activites img {
+        border-radius: 20px 20px 0px 0px ;
+        margin: 0;
+    }
+
+
+
+
+
+    .vertical {
+        width: 171px;
+        height: 222.255px;
+        object-fit: cover;
+    
+    }
+
+    #fortdepomegues {
+        width: 200px;
+        height: 97.765px;
+        object-fit: cover;
+    }
+    #ilesdufrioul {
+        width: 200px;
+        height: 82.55px;
+        object-fit: cover;
+    }
+    #notredamedelagarde {
+        width: 200px;
+        height: 97.56px;
+        object-fit: cover;
+
+    }
+    #parclongchamp {
+        width: 200px;
+        height: 104.49PX;
+        object-fit: cover;
+    }
+
+
+
+    .footer {
+    display: flex; 
+    flex-direction: row;
+
+    align-content: flex-start;
+    margin-left: 0%;
+    background-color: rgba(242,242,242,1);
+        border: 3px rgba(242,242,242,1);
+     width: 100%;
+     margin-bottom: 0%;
+    }
+
+    /*esto es para crear los espacios entre los diferentes bloques de texto en el footer*/
+.blocktext {
+    margin-left: 3%;
+    margin-right: 15%;
+    margin-top: 3%;
+}
+
+.greystar {
+    color:grey;
+}
+
+.activites-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*ecrans ordinateurs*/
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .activites-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .lespluspopulaires > .hebergements
+}
+
+    /*rediger les propiétés CSS ici*/
+    .main 
+  
+
+/*@media screen and (min-width: 768px) and (max-width: 992px)
+{
+    /*rediger les propiétés CSS ici
+}
+*/
+
+@media (min-width: 0px) and (max-width: 768px)
+{
+   h1 {color:black;}
+}
