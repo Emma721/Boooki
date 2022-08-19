@@ -9,8 +9,8 @@ body {
     margin-top: 1%;
     width: 100%;
     margin-left: 0%;
-    justify-content: column;
-    justify-content: space-between;
+    flex-direction: column;
+    
   
   }
 
@@ -18,6 +18,8 @@ body {
     color:black;
     font-weight: 900;
     font-size :18px;
+    display:flex;
+    
   }
   h2 {
     color:black;
@@ -61,9 +63,9 @@ body {
 
 
 
-  .lespluspopulaires .resize{ /*the SAME image size applies to both hebergements and les plus populaires*/
-        width: 130px;
-        height:100.66px ;
+  .lespluspopulaires .resize{ 
+        width: 100px;
+        height:98.66px ;
         padding: 0px;
         contain: content;
        
@@ -94,6 +96,7 @@ body {
     width: 180px; 
     height: auto;
     margin-bottom:10px;
+    contain: content;
      
 }
 
@@ -124,14 +127,32 @@ body {
                     border-radius: 20px;
                     justify-content:space-between;
                     object-fit: cover;
-                    margin: 0% ; /*aplica en margin los 4? valores para tenerlos bien */
+                   /*aplica en margin los 4? valores para tenerlos bien */
                           
                 } 
                 
                
               
     
+.activites-cards {
+    
+    display:flex;
+    flex-wrap: wrap;
+    width: 160px; 
+    height: px;
+    margin: Opx;
+    background-color:  rgba(255,255,255,1);
+    border: 3px rgba(255,255,255,1);
+    border-radius: 20px;
+    justify-content:stretch;
+    object-fit: cover;
+    margin:1px ;
+}
 
+.activites-card {
+    display: flex;
+    justify-content: stretch;
+}
     
 .card-etoiles {
     color: #0065FC;
@@ -170,6 +191,7 @@ body {
     justify-content: stretch;
     margin-left: 7px;
     margin-top: 5px;
+    
 
 }
 .lespluspopulaires .card {
@@ -179,10 +201,11 @@ body {
     border: 3px rgba(255,255,255,1);
     border-radius: 20px;
     justify-content:stretch;
-    margin-left: 5% ; /*aplica en margin los 4? valores para tenerlos bien */
+    margin-left: 5% ; 
     padding: 10px;
     width: 30%;
     box-shadow: 0px 5px 20px #999;
+    contain:content;
  }
 
  
@@ -200,17 +223,28 @@ body {
   otras; puesto que es una frase larga*/
  .lespluspopulaires .card-container h4, h5 {
     line-height: 1.15;
+    contain: content;
  }
+
+
 
 /*controla la medida de la card */
  .lespluspopulaires .card {
     display: flex;
-    justify-content: row;
+    flex-direction: row;
     height: 100px;
     width: 250px;
     padding: 4px;
     margin-bottom: 10%;
+    contain: content; 
    
+ }
+
+ .lespluspopulairescards {
+    display: flex;
+    flex-wrap: wrap;
+    contain: content;
+
  }
 
  .activites #cardvertical { 
@@ -257,6 +291,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
   
 }
 
@@ -280,11 +315,12 @@ header {
         }
 
    
-        .banner ul { 
+        .header ul { 
             display: flex ; 
             list-style: none;
             justify-content : stretch; 
-            justify-content: flex-end;;
+            justify-content: flex-end;
+            
             
             }
        
@@ -331,15 +367,13 @@ header {
 
 
 /*this one keeps the ul of filters aligned horizontaly*/
-header ul {
-        display: flex;
-        list-style: none; 
-        justify-content: flex-start;
-        justify-content: space-between;
-        gap: 1px;
 
-        
+
+    header ul {
+        display: inline-block;
+        width: 50%;
     }
+
 
 header ul li {
     display: inline-block;
@@ -377,7 +411,6 @@ header ul li {
 
 
 .search-bar {
-    
     width: 38%;
     margin-left: 0px;
     border-radius: 20px 20px 20px 20px ;
@@ -394,38 +427,77 @@ header ul li {
     font-size:11pt;
     margin-right: 0;   
     font-weight: 900;
+    display: inline-flex;
+   
+    
 }
 
-
-
 button {
+    display: inline-block;
+
+}
+.icon i {
+    border-radius: 0px 10px 10px 0px;
+    font-size: 14px;
+    align-items: baseline;
+    color: white;
+    background: none;
+    height: auto;
+    width: 20px;
+    padding: 0%;
+
+
+
+        
+}
+
+ button {
     font-size: 14px;
     color: white;
     background: #0065FC;
     border: none;
     border-radius: 0px 10px 10px 0px ;
+    height: 30px;
     width: 20%;
-    padding: 2.5%;
+    padding-bottom: 24.000999999999998px;;
+    padding-top: 7px;
     font-weight: 900;
-  
-    
+    align-items: center;
+    background-position: inherit;
+    contain: content;
+ 
    
+}
 
+text {
+    display: flex;
+    align-items: baseline;
 }
 
 
-.form {
+
+
+form {
     height:auto;
-    width: 100px;
+    width: 300px;
     font-size: 10px;
     display: flex;
-    justify-content: row;
-    align-items: baseline;
+    flex-direction: row;
+    contain: content;
+   
+   
 }
 
  
 /* INFO OF HEADER */
 
+
+.section-info {
+   
+    
+    display:block;
+   
+}
 .info i {
     color: #0065FC;
     font-size: 10px;
@@ -436,14 +508,21 @@ button {
     border-width: 10px;
     border-style: solid;
     border-width: 1px;
+    margin-right: 10px;
+    display: inline-block;
+    
 }
   
 .info {
     padding: 0px;
+    contain: content;
+    display: inline-block;
+    justify-content: stretch;
+    
 }
 
 .section-filtres ul{
-    width: 66%;
+    width: 76%;
 }
 
 .section-filtres ul a:hover {
@@ -453,12 +532,17 @@ button {
 
 .section-filtres ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
     align-items: baseline;
     margin-bottom: 0px;
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
+}
+.ensemble-de-filtres li {
+    display: inline-block;
+    margin-right: 5px;
+
 }
 
 
@@ -486,7 +570,9 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    border: none
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
  
 }
 
@@ -518,16 +604,16 @@ li  {  /*intenta hacer el borde redondeado */
 main {
     display: flex;
     flex-direction:row;
-    justify-content:strecth;
+    flex-wrap: wrap;
+   justify-content: stretch;
     margin-left: 3%;
     
      margin-bottom: 5%;
     margin-top: 0%;
-
-
+}
+    
    
-    }
-
+ 
   
     
 .hebergements {  /* esto es para posicionar y poner el fondo gris de hebergements*/
@@ -574,6 +660,7 @@ main {
             background-color: rgba(242,242,242,1);
             border: 3px rgba(242,242,242,1);
             border-radius: 20px;
+            contain: content;
             
             
         }
@@ -617,6 +704,10 @@ main {
     padding: 0px;
     margin-bottom: 5%;
     
+}
+
+.activites a {
+    margin-bottom: 5%
 }
 
 #ancre-activites {
@@ -704,6 +795,7 @@ main {
     .footer {
     display: flex; 
     flex-direction: row;
+    flex-wrap: wrap;
 
     align-content: flex-start;
     margin-left: 0%;
@@ -724,33 +816,249 @@ main {
     color:grey;
 }
 
-.activites-cards {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-/*ecrans ordinateurs*/
-@media (min-width: 769px) and (max-width: 992px) {
+
+/*DESCKTOP*/
+@media (min-width: 894px) and (max-width: 992px) {
 
     .activites-cards {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+    
     }
 
-    .lespluspopulaires > .hebergements
+    span.icon {display:none}
+    span.text {display:inline-block}
+
+   
 }
 
     /*rediger les propiétés CSS ici*/
-    .main 
   
 
-/*@media screen and (min-width: 768px) and (max-width: 992px)
-{
-    /*rediger les propiétés CSS ici
-}
-*/
 
-@media (min-width: 0px) and (max-width: 768px)
+
+
+
+  
+    /*TABLET*/
+@media  (min-width: 768px) and (max-width: 990px)
 {
-   h1 {color:black;}
+    /*rediger les propiétés CSS ici*/
 }
+
+
+
+
+
+
+
+
+/*MOBILE*/
+@media (min-width:1px) and (max-width: 894px)
+{
+  
+  .logo 
+  {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 45%;
+  }
+
+  .info {
+    display:flex;
+    display: inline-flex;
+  }
+
+    .banner ul {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0px;
+    }
+
+    .banner .ul {
+        color: #0065FC;
+      
+
+    }
+
+    .lespluspopulaires{
+        display: flex;
+        flex-direction: column;
+        order: -1;    
+        width: 80%;
+      
+    }
+
+        .lespluspopulairescards {
+            display: flex;
+            
+        }
+
+    .hebergements {
+        display: flex;
+        order: 0;    
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    }
+
+            
+        .hebergements .card {
+             width: 300px;
+            height: 200px;
+            }
+
+        .hebergements .card .resize {
+            width: 283px;
+            height: 110px;
+            border-radius: 10 10 10 10;
+        }
+
+        .hebergements .card-container {
+            display: flex;
+            justify-content: stretch;
+            margin: 0px;
+            margin-left: 5%;
+        }
+
+
+
+
+
+
+
+    .activites {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        margin-left: 0%;
+       
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+       
+        
+        
+    }
+
+
+
+    .activites #cardvertical {
+        width: 283px;
+        height: 120px;
+        margin-left: 15%;
+        
+
+    }
+
+    .activites .classtitle {
+        width: 283px;
+        height: 120px;
+        contain: content;
+    }
+
+    .vertical {
+        width: 283px;
+        height: 90px;
+        object-fit: cover;
+        
+
+    }
+
+    #cardfortdepomegues .classtitle{
+        width: 283px;
+        height: 90px;
+
+     }
+
+   
+     #fortdepomegues {
+        width: 283px;
+        height: 90px;
+        object-fit: cover;
+     }
+
+     #cardilesdufrioul .classtitle {
+        width: 283px;
+        height: 90px;
+        margin-bottom: 5%;
+    }
+
+     #ilesdufrioul {
+        width: 283px;
+        height: 90px;
+    }
+        .ilesdufrioul {
+            width: 283px;
+            height: 90px;
+        }
+
+    #cardnotredamedelagarde .card {
+        width: 283px;
+        height: 90px;
+     }
+
+     #notredamedelagarde {
+        width: 283px;
+        height: 90px;
+        object-fit: cover;
+     }
+
+    #parclongchamp {
+        width: 283px;
+        height: 90px;
+        object-fit: cover;
+    }
+
+    
+
+
+  nav .section-filtres {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    width: 30px;
+  }
+  span.icon {display:inline-block}
+  span.text {display:none}
+
+
+  /*aqui intento que el i de info y su texto se queden uno al lado del otro cuando la talla se reduce*/
+  .info li {
+    display: inline-block;
+    display: inline-flex;
+  }
+
+  .resize {
+    width: 400px;
+    height: 200px;
+
+  }
+    
+
+ 
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+  }
+
+  
+
+   }
+
