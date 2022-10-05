@@ -1,377 +1,180 @@
-/*contenu qui s'applique au body pour toute version*/
-
 
 
 
 body {
-    font-family: "raleway"; 
+    font-family:"raleway"; 
     margin: 0px ;
-    margin-top: 1%;
+    margin-top: 0%;
     width: 100%;
+    height: 100%;
     margin-left: 0%;
     flex-direction: column;
     
-  
   }
 
-  h1 {
+html{
+    width: 100%;
+    height:100%;
+  }
+
+  /*this is what makes the text inside the search bar appear when not used*/
+ ::placeholder{
+    color:black;
+    font-size:12px ;
+ }
+
+ input[type="text"]:focus
+ {
+     font-size:12px;
+     outline: white;
+     margin-top: 1px;
+     
+ }
+ 
+ input[type="text"]
+ {
+     font-size:12px;
+     outline: white;
+     margin-top: 1px;
+     
+ }
+
+form {
+    margin-left: 3%;
+  }
+
+
+ 
+/*TITLES & P*/
+
+h1 {
     color:black;
     font-weight: 900;
     font-size :18px;
     display:flex;
-    
-  }
-  h2 {
+    flex-wrap: wrap;
+    margin-left: 3%;
+    }
+
+h2 {
     color:black;
     font-weight: 400;
     font-size: 13px;
     line-height: 0px;
     margin-bottom: 25px;
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 3%;
+    }
 
   
-  }
 
- h3 {
+h3 {
     font-weight: 700;
     font-size : 15px;
     padding: 0px;
-    margin: 0px;
-
-}
-
-    h4 {
-        font-weight: 700;
-        font-size : 11px;
-        margin-block-start: 0;
+    margin-left: 3%;
+   
     }
 
- h5 {
+h4 {
+    font-weight: 700;
+    font-size : 11px;
+    margin-block-start: 0;
+    margin-block-end: 6px;
+    }
+
+h5 {
     font-weight: 400;
     font-size : 10px;
     margin: 0px;
     }
 
-  p {
+p {
     color:black;
     font-size: 10px;
+    }
+
+
     
-  }
-
-  .etoiles {
-    display: flex;
-    justify-content: row;}
-
-
-
-  .lespluspopulaires .resize{ 
-        width: 100px;
-        height:98.66px ;
-        padding: 0px;
-        contain: content;
-       
-        
-      }
-    
-            img {
-                    width: 100%;
-                    height: auto;
-                    vertical-align: middle;
-                    object-fit: cover;
-                    contain: content;
-                    border-radius: 20px; /* le he anadido border redondeados pero tienes q cambiarlos a solo dos esquinas /4 */
-                }
-    
-                
-
-/*para cambiar la talla de todas las imagenes de las cards de hebergements*/
-.hebergements .resize {
-    width: 170px;
-    height:106.66px ;
-    padding: 3%;
-
-}
-
-/*para controlar lo que pasa dentro de cada card d'hebergements */
-.hebergements .card {
-    width: 180px; 
-    height: auto;
-    margin-bottom:10px;
-    contain: content;
-     
-}
-
-
- /*para controlar la disposicion general de las cards dentro de el cuadrado gris*/
-.hebergements-cards {
-    display: flex; 
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    align-content: flex-start;
-    justify-content: space-around;
-    contain: content; 
-             
-}
-
-
-
-
-        
-                .card { 
-                    display:block; 
-                    width: 160px; 
-                    height: px;
-                    margin: Opx;
-                    background-color:  rgba(255,255,255,1);
-                    border: 3px rgba(255,255,255,1);
-                    border-radius: 20px;
-                    justify-content:space-between;
-                    object-fit: cover;
-                   /*aplica en margin los 4? valores para tenerlos bien */
-                          
-                } 
-                
-               
-              
-    
-.activites-cards {
-    
-    display:flex;
-    flex-wrap: wrap;
-    width: 160px; 
-    height: px;
-    margin: Opx;
-    background-color:  rgba(255,255,255,1);
-    border: 3px rgba(255,255,255,1);
-    border-radius: 20px;
-    justify-content:stretch;
+img {
+    vertical-align: middle;
     object-fit: cover;
-    margin:1px ;
-}
-
-.activites-card {
-    display: flex;
-    justify-content: stretch;
-}
-    
-.card-etoiles {
-    color: #0065FC;
-    font-size: 10px;
-    margin-top: 4%;
     contain: content;
-    
-}
+    border-radius: 20px; 
+    /* le he anadido border redondeados pero tienes q cambiarlos a solo dos esquinas /4 */
+    }
 
-.card-double {
-    display: flex; 
-    flex-direction: column;
-    
-}
-
-
-.card-container {
-    display: flex;
-    flex-direction: column;
-   justify-content: stretch;
-   justify-content: flex-start;
-
-}
-
-.card-container h4, h5 {
-    line-height: 0px;
-    margin-top: 3%;
-   
-
-    
-}
-
-.hebergements .card-container {
-    display: flex;
-    justify-content: flex-start;
-    justify-content: stretch;
-    margin-left: 7px;
-    margin-top: 5px;
-    
-
-}
-.lespluspopulaires .card {
-    display: flex; 
-    flex-direction: row;
-    background-color:  rgba(255,255,255,1);
-    border: 3px rgba(255,255,255,1);
-    border-radius: 20px;
-    justify-content:stretch;
-    margin-left: 5% ; 
-    padding: 10px;
-    width: 30%;
-    box-shadow: 0px 5px 20px #999;
-    contain:content;
- }
-
- 
- .lespluspopulaires .card-container {
-    display: flex; 
-    flex-direction: column;
-    width: 151.23px;
-    contain: content;
-    justify-content: flex-start;
-    margin-left: 5px;
-    margin-top:5px;
- }
-
-  /* esto es para que haya line height en el containter, porque sino se te ponen las letras del h4 las unas sobre las
-  otras; puesto que es una frase larga*/
- .lespluspopulaires .card-container h4, h5 {
-    line-height: 1.15;
-    contain: content;
- }
-
-
-
-/*controla la medida de la card */
- .lespluspopulaires .card {
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-    width: 250px;
-    padding: 4px;
-    margin-bottom: 10%;
-    contain: content; 
-   
- }
-
- .lespluspopulairescards {
-    display: flex;
-    flex-wrap: wrap;
-    contain: content;
-
- }
-
- .activites #cardvertical { 
-    box-shadow: 0px 5px 20px #999;
-    width: 171px;
-    height: 251.255px;
-    
-}
-
-
-.activites  #cardfortdepomegues { 
-    box-shadow: 0px 5px 20px #999;
-    width: 200px;
-    height: 131px;
-    margin-bottom: 5%;
-    
-}
-
-.activites  #cardilesdufrioul { 
-    box-shadow: 0px 5px 20px #999;
-    width: 200px;
-    height: 110.55px;
-    
-}
-
-.activites  #cardnotredamedelagarde { 
-    box-shadow: 0px 5px 20px #999;
-    width: 200px;
-    height: 130px;
-    margin-bottom: 5%;
-    
-}
-
-.activites  #cardparclongchamp { 
-    box-shadow: 0px 5px 20px #999;
-    width: 200px;
-    height: 130px;
-    
-}
-
-
-
-.activites-card { /*cambialo a column para la version mobile*/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  
-}
-
-
-
-              /*here I want to create a class that will apply the same size to all the images of the hebergement part and les plus populaires part*/
-                    
-                  
-    
-
-/*HEADER*/
-header {
-    margin-left: 2%;
+ /*HEADER*/
+header {   
+    width:90%;
 }
 .banner {
     display: flex;
     justify-content: space-between;
-    margin-right: 7%;
-    margin-top: 3%;
-
-        }
+    margin-right: 0%;
+   }
 
    
-        .header ul { 
-            display: flex ; 
-            list-style: none;
-            justify-content : stretch; 
-            justify-content: flex-end;
-            
-            
-            }
+.header ul { 
+    display: flex ; 
+    list-style: none;
+    justify-content : stretch; 
+    justify-content: flex-end;
+    width: 100%;
+    }
+                  
+.banner ul li {
+    font-size: 13px;
+    margin-left: 0px;
+    width: 50%;
+    padding-left: 33px;
+    padding-right: 13px; 
+    border-top: 3px solid white;
+    /*padding-top: 20px;*/
+    border-radius: 0;    
+    }
+
+
        
-       .banner ul li {
-        font-size: 13px;
-        margin-left: 50px;
-       }
-       
-            .logo {
-            max-width: 68px;
-            max-height:30px ;
-            padding-left:0%;
-            margin-left: 2%;
-            margin-top: 1%;
-            }
+.logo {
+    max-width: 68px;
+    max-height:30px ;
+    padding-left:0%;
+    padding-left: 3%;
+    margin-top: 1%;
+    }
 
-            .banner a{
-                color: black;
-            }
 
-            .banner a:link {
-                text-decoration: none; /* this removes the underlines from links*/
-                
+
+.banner a:link a:hover {
+    text-decoration: none; /* this removes the underlines from links*/
+    
+    }
+
+.banner a:hover {
+        color: #0065FC;
+    }
+
+
+.banner li:hover {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 20px;
+    border-radius: 0;
+    }
             
-            }
-            
-            .banner a:hover .overline-box {
-                color: #0065FC;
-                border-top: 4px solid #0065FC;
-                padding:35px;
-               
-            }
-           
-
-         
-
-            
-
  a {
     display: block;
     text-decoration: none;
     color: black
- }           
+    }           
 
 
 /*this one keeps the ul of filters aligned horizontaly*/
-
-
-    header ul {
-        display: inline-block;
-        width: 50%;
+ header ul {
+    display: inline-block;
+    width: 50%;
     }
 
 
@@ -379,25 +182,16 @@ header ul li {
     display: inline-block;
     vertical-align: middle;
     border : black;
-    
-   
-
 }
 
-
-
 header ul {
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
     vertical-align: middle;
     width: 50%;
 }
 
-header ul li {
-    border : black ;
-}
-
-
- .search-bar i {
+.search-bar i {
     font-size: 14px;
     color:black;
     border-radius: 10px 0px 0px 10px;
@@ -405,10 +199,7 @@ header ul li {
     padding: 17px;
     line-height: 0px;
 
-   
-
 }
-
 
 .search-bar {
     width: 38%;
@@ -428,14 +219,11 @@ header ul li {
     margin-right: 0;   
     font-weight: 900;
     display: inline-flex;
+    margin-left:10px;
    
     
 }
 
-button {
-    display: inline-block;
-
-}
 .icon i {
     border-radius: 0px 10px 10px 0px;
     font-size: 14px;
@@ -451,20 +239,23 @@ button {
         
 }
 
- button {
-    font-size: 14px;
+button {
+    font-size: 12px;
+    display: inline-block;
     color: white;
     background: #0065FC;
     border: none;
     border-radius: 0px 10px 10px 0px ;
-    height: 30px;
-    width: 20%;
+    height: 10px;
+    width: 30%;
     padding-bottom: 24.000999999999998px;;
     padding-top: 7px;
     font-weight: 900;
     align-items: center;
     background-position: inherit;
     contain: content;
+    line-height: 20px;
+    letter-spacing: 0.5px;
  
    
 }
@@ -474,9 +265,6 @@ text {
     align-items: baseline;
 }
 
-
-
-
 form {
     height:auto;
     width: 300px;
@@ -484,20 +272,18 @@ form {
     display: flex;
     flex-direction: row;
     contain: content;
-   
-   
+ 
 }
 
- 
-/* INFO OF HEADER */
-
-
 .section-info {
-   
-    
     display:block;
    
 }
+
+.section-info li p {
+    width: 100%;
+}
+
 .info i {
     color: #0065FC;
     font-size: 10px;
@@ -518,19 +304,14 @@ form {
     contain: content;
     display: inline-block;
     justify-content: stretch;
+    width: 100%;
+    margin-left: 3%;
     
 }
 
 .section-filtres ul{
-    width: 76%;
-}
-
-.section-filtres ul a:hover {
-    background-color: lightgrey;
-    border-radius: 20px 20px 20px 20px;
-}
-
-.section-filtres ul {
+    width: 100%;
+    margin-left: 2%;
     display: flex;
     justify-content: stretch;
     align-items: baseline;
@@ -538,13 +319,28 @@ form {
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 0;
+  
+
+    
 }
+
+.section-filtres ul a:hover {
+    background-color: lightgrey;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
 .ensemble-de-filtres li {
     display: inline-block;
     margin-right: 5px;
 
 }
 
+.section-filtres {
+    display: inline-block;
+    
+}
 
 .section-filtres i {
     display: inline-block;
@@ -554,7 +350,7 @@ form {
     color: blue;
     margin-right: 2px;
     font-size: 9px;
-    background-color: rgb(216, 239, 246);;
+    background-color: rgb(216, 239, 246);
 
 }
 .section-filtres li {
@@ -562,17 +358,23 @@ form {
     border-color: rgba(242,242,242,1);
     border-style:solid;
     border-width: 1px;
+    margin-right: 10px;
+    margin-top: 5px;
   
  
 }
 
 .section-filtres #presentation-filtres {
-    display: flex;
+    display: inline;
+    flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
     border: none;
     margin-right: 5px;
     margin-bottom: 5px;
+    margin-top: 0.8%;
+    margin-left: 2%;
+   
  
 }
 
@@ -581,16 +383,17 @@ form {
     font-size: 12px;
     margin-right: 5px;
     margin-left: 4px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
   
 } 
-
-
 
 li  {  /*intenta hacer el borde redondeado */
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    text-align: baseline;
+    align-items: baseline;
     border-color: black;
     border-radius: 20px;
    
@@ -598,24 +401,87 @@ li  {  /*intenta hacer el borde redondeado */
 }
 
 
-
-
 /*MAIN*/
 main {
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-   justify-content: stretch;
-    margin-left: 3%;
-    
-     margin-bottom: 5%;
+    margin-left: 0%;
+    margin-bottom: 5%;
     margin-top: 0%;
 }
-    
+
+.etoiles {
+    display: flex;
+    flex-direction: row;
+}
    
- 
-  
+
+/*HEBERGEMENTS*/              
+/*para cambiar la talla de todas las imagenes de las cards de hebergements*/
+.hebergements .resize {
+    width: 170px;
+    height:106.66px ;
+    padding: 3%;
+
+}
+
+/*para controlar lo que pasa dentro de cada card d'hebergements */
+.hebergements .card {
+    width: 180px; 
+    height: auto;
+    margin-bottom:10px;
+    contain: content;
+    box-shadow: 0px 2px 5px #999;
+   
+}
+
+
+ /*para controlar la disposicion general de las cards dentro de el cuadrado gris*/
+.hebergements-cards {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    align-content: flex-start;
+    justify-content: space-around;
+   
+             
+}
+       
+.card { /*it is only applied to the cards of hebergements */
+    display:block; 
+    width: 160px; 
+    height: 0px;
+    background-color:  rgba(255,255,255,1);
+    border: 3px rgba(255,255,255,1);
+    border-radius: 20px;
+    object-fit: cover;
+     /*aplica en margin los 4? valores para tenerlos bien */
+    } 
+
+.hebergements .card-container {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: stretch;
+    margin-left: 13px;
+    margin-top: 5px;
+    }
     
+.hebergements.card-container h4 {
+    contain: content;
+    margin-block-end: 1px;
+    margin: 0;
+    }
+
+.hebergements .card-etoiles {
+    color: #0065FC;
+    font-size: 10px;
+    margin-top:8%;
+    margin-bottom: 3%;
+    contain: content;   
+    }
+
 .hebergements {  /* esto es para posicionar y poner el fondo gris de hebergements*/
     display: flex; 
     flex-wrap: wrap;
@@ -627,73 +493,246 @@ main {
     align-content: flex-start;
     height: 50%;
     margin-right: 2.5%;
- 
-
-}
-
-
+    margin-left: 3%;
+    }
 
 .hebergements h1 {
     width: 0%;
 }
 
 .hebergements h3 {
-    margin: 15px;
-    margin-top: 6%;
-   
+    margin-bottom: 15px;
 }
-
-
 
 .hebergements img {
     border-radius: 20px 20px 0px 0px ;
     
 }
+     
+.hebergements h3 {
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-block-start: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+/*FIN HEBERGEMENTS*/
 
- 
- .lespluspopulaires {  
-            display: flex; 
-            flex-direction: column;
-            flex-wrap: wrap;
-            width:30%;
-            margin-right: 0;
-            background-color: rgba(242,242,242,1);
-            border: 3px rgba(242,242,242,1);
-            border-radius: 20px;
-            contain: content;
-            
-            
-        }
 
-        
+/*LES PLUS POPULAIRES*/
+.lespluspopulaires .resize{ 
+    width: 100px;
+    height: 109.66px ;
+    padding: 0px;
+    contain: content;
+    }
+
+.lespluspopulaires .card-container {
+    display: flex; 
+    flex-direction: column;
+    max-width: 102.22999999999999px;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-top:5px;
+    justify-content: stretch;
+ }
+
+   /* esto es para que haya line height en el containter, porque sino se te ponen las letras del h4 las unas sobre las
+  otras; puesto que es una frase larga*/
+.lespluspopulaires .card-container h4, h5 {
+    line-height: 1.15;
+    margin-block-end: 1px;
+    }
+
+
+.lespluspopulaires .card {
+    display: flex; 
+    flex-direction: row;
+    background-color:  rgba(255,255,255,1);
+    border: 3px rgba(255,255,255,1);
+    border-radius: 20px;
+    justify-content:stretch;
+    margin-left: 5% ; 
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0px 2px 5px #999; 
+ }
+
+ /*controla la medida de la card */
+ .lespluspopulaires .card {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 250px;
+    padding: 4px;
+    margin-bottom: 10%;
+    flex-grow: 10; 
+ }
+
+.lespluspopulairescards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /*creo que esto deberias quitarlo, q no sirve para grandes pantallas*/
+    justify-content: flex-start;
+    contain: content;
+ }
+
+
+.lespluspopulaires .card-etoiles { /*para el aspecto y la posicion de las estrellas*/
+    color: #0065FC;
+    font-size: 10px;
+    margin-top:40%;
+    margin-bottom: 1%;   
+    }
+
 .rowone   { /*esta es la que hace que se quede alineado con los iconos !*/
     display: flex;
     flex-direction: row;
-    align-items: center;
+    width: 100%;
     justify-content: space-around;
-    margin-bottom: 7%;
-    margin-top: 11%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    }
 
-  }
-
-  .rowone i {
+.rowone i {
     font-size: 14px;
   }
  
 
-     
-         .lespluspopulaires img {
-            border-radius: 20px 0px 0px 20px ;
-            
-         }
-         
-      
+.lespluspopulaires img {
+    border-radius: 20px 0px 0px 20px ;
+}
+
+
+.lespluspopulaires .card {
+    flex-direction: row;
+    max-height: 169px;
+    max-width: 288px;
+    }
         
+.lespluspopulaires .resize {
+    max-width: 171px;
+    max-height: 118.66px;
+    }
+
+.lespluspopulaires {  
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width:30%;
+    margin-right: 0;
+    background-color: rgba(242,242,242,1);
+    border: 3px rgba(242,242,242,1);
+    border-radius: 20px;
+    }
+         
+/*FIN LES PLUS POPULAIRES*/
 
 
+ /*ACTIVITES*/             
+    
+.activites-cards {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: auto;
+    margin: 0px;
+    background-color:  rgba(255,255,255,1);
+    border: 3px rgba(255,255,255,1);
+    border-radius: 20px;
+    justify-content:space-around;
+    object-fit: cover;
+    margin:1px ;  
+}
 
+.card-double {
+    display: flex; 
+    flex-direction: column;   
+}
 
-    /*ACTIVITES*/            
+.card-container {
+    display: flex;
+    flex-direction: column;
+   justify-content: stretch;
+   justify-content: flex-start;
+}
+
+.card-container h4, h5 {
+    line-height: 0px;
+    margin-top: 1%;  
+}
+
+.card-container h5 {
+    line-height: 0px;
+    margin-top: 7%;  
+}
+
+.activites .cardVertical { 
+    box-shadow: 0px 2px 5px #999;
+    width: 200px;
+    height: 274.255px;
+    border-radius: 20px 20px 20px 20px;   
+}
+
+/*esta es la que ajusta la talla de la imagen vertical dentro de la card*/
+.card-image img { 
+    width: 200px;
+    height: 244.255px;
+}
+
+.activites  #cardpomegues { 
+    box-shadow: 0px 2px 5px #999;
+    width: 205px;
+    height: 130px;
+    margin-bottom: 5%;
+    
+}
+
+ #cardpomegues .card-image img {
+    width: 205px;
+    height: 97.56px;
+    } 
+
+#cardilesdufrioul .card-image img {
+    width: 206px;
+    height: 98.56px;
+    }
+    
+
+.activites  #cardilesdufrioul { 
+    box-shadow: 0px 2px 5px #999;
+    width: 205px;
+    height: 130px;
+    
+}
+
+.activites  #cardnotredamedelagarde { 
+    box-shadow: 0px 2px 5px #999;
+    width: 205px;
+    height: 130px;
+    margin-bottom: 5%;
+    
+}
+
+ #cardnotredamedelagarde img {
+    width: 205px;
+    height: 97.56px;
+    object-fit: cover;
+    }
+
+.activites  #cardparclongchamp { 
+    box-shadow: 0px 2px 5px #999;
+    width: 205px;
+    height: 130px;  
+}
+        
+.activites-card { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .activites {
     margin-left: 0%;
@@ -706,9 +745,6 @@ main {
     
 }
 
-.activites a {
-    margin-bottom: 5%
-}
 
 #ancre-activites {
     margin-bottom:20px;
@@ -718,347 +754,1593 @@ main {
 .activites h4 {
     margin: 10px 10px 3px 13px;
 }
-    .activites img {
-        border-radius: 20px 20px 0px 0px ;
-        margin: 0;
-    }
 
-    .vertical {
-        width: 302px;
-        height: 444.51px;
-        object-fit: cover;
+.activites img {
+    border-radius: 20px 20px 0px 0px ;
+    margin: 0;
+}
+
     
-    }
 
-    #fortdepomegues {
-        width: 302px;
-        height: 215.53px;
-        object-fit: cover;
-    }
-    #ilesdufrioul {
-        width: 302px;
-        height: 165.1px;
-        object-fit: cover;
-    }
-    #notredamedelagarde {
-        width: 302px;
-        height: 195.12px;
-        object-fit: cover;
-
-    }
-    #parclongchamp {
-        width: 302px;
-        height: 208.98;
-        object-fit: cover;
-    }
-
-    .activites img {
-        border-radius: 20px 20px 0px 0px ;
-        margin: 0;
-    }
-
-
-
-
-
-    .vertical {
-        width: 171px;
-        height: 222.255px;
-        object-fit: cover;
+#fortdepomegues {
+    width: 302px;
+    height: 215.53px;
+    object-fit: cover;
+}
     
+#ilesdufrioul {
+    width: 302px;
+    height: 165.1px;
+    object-fit: cover;
     }
 
-    #fortdepomegues {
-        width: 200px;
-        height: 97.765px;
-        object-fit: cover;
+#notredamedelagarde {
+    width: 302px;
+    height: 195.12px;
+    object-fit: cover;
     }
-    #ilesdufrioul {
-        width: 200px;
-        height: 82.55px;
-        object-fit: cover;
-    }
-    #notredamedelagarde {
-        width: 200px;
-        height: 97.56px;
-        object-fit: cover;
 
+#parclongchamp {
+    width: 302px;
+    height: 208.98px;
+    object-fit: cover;
     }
-    #parclongchamp {
-        width: 200px;
-        height: 104.49PX;
-        object-fit: cover;
+   
+
+.activites img {
+    border-radius: 20px 20px 0px 0px ;
+    margin: 0;
     }
 
 
+#fortdepomegues {
+    width: 200px;
+    height: 97.765px;
+    object-fit: cover;
+    }
 
-    .footer {
+#ilesdufrioul {
+    width: 200px;
+    height: 82.55px;
+    object-fit: cover;
+    }
+
+#notredamedelagarde {
+    width: 200px;
+    height: 97.56px;
+    object-fit: cover;
+    }
+
+#parclongchamp {
+    width: 206px;
+    height: 104.49PX;
+    object-fit: cover;
+    }
+
+/*FOOTER*/
+
+footer {
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
-
     align-content: flex-start;
     margin-left: 0%;
     background-color: rgba(242,242,242,1);
-        border: 3px rgba(242,242,242,1);
-     width: 100%;
-     margin-bottom: 0%;
+    border: 3px rgba(242,242,242,1);
+    width: 100%;
+    margin-bottom: 0%;
     }
 
-    /*esto es para crear los espacios entre los diferentes bloques de texto en el footer*/
+/*esto es para crear los espacios entre los diferentes bloques de texto en el footer*/
 .blocktext {
-    margin-left: 3%;
-    margin-right: 15%;
-    margin-top: 3%;
+    margin-left: 6%;
+    margin-right: 14%;
+    margin-top: 1%;
+    height: 138px;
+}
+
+footer p {
+    margin-left: 2%;
 }
 
 .greystar {
     color:grey;
 }
+/*END FOOTER*/
+
 
 
 
 /*DESCKTOP*/
-@media (min-width: 894px) and (max-width: 992px) {
 
-    .activites-cards {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    
-    }
+@media (min-width: 1272px) and (max-width: 3000px) 
+{
+
+/*HEADER*/
 
     span.icon {display:none}
     span.text {display:inline-block}
 
+.logo {
+    margin-top: 0.5%;
+    }
+
+.search-bar {
+    margin-left: 1%;
+    }
+
+    
+
+.section-filtres {
+    margin-left: 1%;
+    width: 80%;
+    display:flex;
+}
+
+.banner li {
+    border-top: 3px solid #F2F2F2;
+    padding-top: 15px;
+    border-radius: 0;
+    padding-right: 33px;
+    }
+
+.banner li:hover {
+    border-top: 3px solid #0065FC;
+    padding-top: 15px;
+    border-radius: 0;
+    }
+
+.banner ul {
+    display:flex;
+    justify-content: flex-end;
+    margin-left: 70%;
+    margin-top: 0;
+}
+             
+.banner{
+   margin-right: 0px;
+ } 
+        
+/*HEBERGEMENTS*/
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:14%;
+    height:431px;
+    }
+
+.hebergements h3 {
+    margin-left: 20px;
+    margin-top: 20px;
+    }
+
+/*LES PLUS POPULAIRES*/
+.lespluspopulaires .card {
+    max-width: 400px;
+    margin-left: 50px;
+    }
+
+.lespluspopulaires .resize {
+    width: 100px;
+    height: 98.66px;
+    }
+
+.rowone {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    }
+
+.rowone i {
+    margin-top: 3%;
+    }
+
+/*ACTIVITES*/
+/*FOOTER*/
+
+.blocktext{
+    margin-left: 6%;
+    margin-right: 14%;
+    margin-top: 0%;
+    }
    
+ footer p {
+    margin-left: 2%;
+    }
 }
 
-    /*rediger les propiétés CSS ici*/
-  
 
-
-
-
-
-  
-    /*TABLET*/
-@media  (min-width: 768px) and (max-width: 990px)
+@media (min-width: 1195px) and (max-width: 1271px) 
 {
-    /*rediger les propiétés CSS ici*/
+ 
+/*HEADER*/
+.banner li {
+    border-top: 3px solid #F2F2F2;
+    padding-top: 15px;
+    border-radius: 0;
+    }
+
+.banner li:hover {
+    border-top: 3px solid #0065FC;
+    padding-top: 15px;
+    border-radius: 0;
+    }
+
+.logo {
+    margin-left: 2%; 
+    }
+
+/*MAIN*/
+
+/*HEBERGEMENTS*/
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10%;
+    }
+
+/*LES PLUS POPULAIRES*/
+.lespluspopulaires i {
+    margin-top: 10px;
+}
+
+.lespluspopulaires i {
+    margin-top: 10px;
+}
+
+/*ACTIVITES*/
+/*FOOTER*/
+
+}
+
+@media (min-width: 993px) and (max-width: 1271px) {
+
+/*HEADER*/
+
+span.icon {display:none}
+span.text {display:inline-block}
+
+.banner ul {
+    margin-left: 65%;
+    margin-top: 0;
+    margin-bottom:0;
+    }
+
+.banner li {
+    border-top: 3px solid #F2F2F2;
+    padding-top: 15px;
+    border-radius: 0;
+    }
+
+.banner li:hover {
+    border-top: 3px solid #0065FC;
+    padding-top: 15px;
+    border-radius: 0;
+    }
+
+.banner ul {
+    margin-left: 69%;
+    }
+
+.logo {
+    margin-left: 0;
+    margin-top:0.5%;
+    }
+
+.search-bar {
+    margin-left: 1%;
+    }
+
+button {
+    border-radius: 0px 10px 10px 0px;
+    font-size: 12px;
+    display: inline-block;
+    color: white;
+    background: #0065FC;
+    border: none;
+    height: 10px;
+    width: 30%;
+    padding-bottom: 24.000999999999998px;
+    padding-top: 7px;
+    font-weight: 900;
+    align-items: center;
+    background-position: inherit;
+    contain: content;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.section-filtres {
+    margin-left: 1%;
+    width:80%;
+    display: flex;
+    }
+
+.section-filtres #presentation-filtres {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 1.5%;
+    margin-left: 2%;  
+    }
+
+/*MAIN*/
+/*HEBERGEMENTS*/
+     
+.hebergements h3 {
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-top: 20px;
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: flex-start;
+    }
+
+.hebergements-cards{
+    height: 407px;
+}
+
+.hebergements {
+    padding:10px;
+    margin-right: 0;
+    }
+
+/*LES PLUS POPULAIRES*/
+.lespluspopulaires .card {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    }
+
+.rowone i {
+    margin-top: 3%;
+    }
+
+.lespluspopulaires {
+    margin-left: 30px;
+    }
+
+.lespluspopulaires .card {
+    height: 77%;
+    min-width:263px;
+    max-width: 363px;
+    }
+
+.lespluspopulaires h3 {
+    margin-top:10px;
+    }
+   
+/*ACTIVITES*/
+.activites-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: stretch;
+    }
+
+.activites h3 {
+    width: 90%;
+    }    
+    
+
+
+}
+
+@media  (min-width: 832px) and (max-width: 992px){
+
+/*HEADER*/
+
+button {
+    border-radius: 10px 10px 10px 10px;
+    font-size: 12px;
+    display: inline-block;
+    color: white;
+    background: #0065FC;
+    border: none;
+    height: 10px;
+    width: 30%;
+    padding-bottom: 24.000999999999998px;
+    padding-top: 7px;
+    font-weight: 900;
+    align-items: center;
+    background-position: inherit;
+    contain: content;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.header {
+    margin-left: 16px;
+    width:100%;
+    }
+    
+span.icon {display:inline-block}
+span.text {display:none}
+
+     
+.banner ul {
+    display: flex;
+    margin-left: 57%;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+    }
+
+.banner li:hover {
+    border-top: 3px solid #0065FC;
+    padding-top: 15px;
+    border-radius: 0;
+    }
+
+.logo {
+    margin-left: 0;
+    }
+ 
+.section-filtres {
+    margin-left: 1%;
+    width:80%;
+    display: flex;
+}
+
+.section-filtres #presentation-filtres {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 1.3%;
+    margin-left: 2%;
+   
+ 
+}
+
+form {
+    height: auto;
+    width: 300px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    contain: content;
+    margin-left: 5%;
+    }
+
+.banner li {
+    border-top: 3px solid #F2F2F2;
+    padding-top: 15px;
+    border-radius: 0;
+    }
+
+/*MAIN*/
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+    }
+
+/*HEBERGEMENTS*/
+.hebergements {
+    display: flex;
+    order: 0;    
+    flex-direction: row;
+    width: 60%;
+    margin-left: 1%;
+    margin-block-start: 12px;
+    margin-top: 0;
+    height: 751px;
+    }
+
+.hebergements-cards {
+    height: 639px;
+    gap: 44px;
+    }
+
+.hebergements h3 {
+    margin-top: 3%;
+    }
+    /*LES PLUS POPULAIRES*/
+    
+    
+.lespluspopulaires a {
+    width: 100%;
+    height: 33%;
+    }
+
+.lespluspopulaires {
+    display: flex;
+    flex-direction:column;
+    width: 27%;
+    margin-left: 2%;
+    margin-right: 3%;
+}
+
+.lespluspopulaires .card {
+    max-width:170px;
+    max-height: 200px;
+    display: flex;
+    flex-direction:column;
+    width: 180px;
+    margin-bottom: 11px;;
+    height: 74%;
+    margin-left: 3px;
+    margin-top: 4px; 
+    }
+
+.lespluspopulairescards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;  
+    }
+
+.lespluspopulaires .resize {
+    width: 179px;
+    height: 103.66px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 0%;
+    }
+
+.lespluspopulaires .card-container {
+    max-height: 220px;
+    width: 250px;
+    }
+
+.lespluspopulaires .card-etoiles {
+    color: #0065FC;
+    font-size: 10px;
+    margin-top: 4%;
+    margin-bottom: 10px;
+    }
+
+    
+.rowone h3 {             
+    margin: 0%;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3px;
+    margin-top:3%;
+    }
+
+.rowone i {
+    margin-top: 10px;
+    }
+
+.card-container h4, h5 {
+    margin-top: 0;
+    }
+    
+.lespluspopulaires .card-container {
+    height: 220px;
+    width: 151px;
+    margin-top: 3px;
+    }
+ 
+   
+/*ACTIVITES*/
+.activites-cards {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    margin-left: 12%;
+    gap: 7%;  
+    width:86%;   
+    }
+
+.activites h3 {
+    width: 90%;
+}
+    
+.card-double {
+    display: flex;
+    flex-direction:row;
+    gap: 11%;
+}
+
+.activites .cardVertical  {
+    box-shadow: 0px 2px 5px #999;
+    width: 205px;
+    height: 127.255px;
+    margin-bottom: 5%;   
+    }
+
+.cardVertical img {
+    width: 205px;
+    height: 97.56px;
+    }
+
+#parcNationalDesCalanques .cardVertical{
+    display: flex;
+    flex: 1;
+    }
+
+
+.cardVertical a {
+    width: 221px;
+    height: 138px;
+    }
+
+/*FOOTER*/
+.blocktext {
+    margin-left: 6%;
+    margin-right: 14%;
+    margin-top: 1%;
+    height: 138px;
+    }
+    
+footer p {
+    margin-left: 2%;
+    }
+
+}
+
+  
+/*TABLET*/
+
+@media  (min-width: 810px) and (max-width: 932px){ 
+
+/*HEADER*/
+
+button {
+    border-radius: 10px 10px 10px 10px;
+    font-size: 12px;
+    display: inline-block;
+    color: white;
+    background: #0065FC;
+    border: none;
+    height: 10px;
+    width: 30%;
+    padding-bottom: 24.000999999999998px;
+    padding-top: 7px;
+    font-weight: 900;
+    align-items: center;
+    background-position: inherit;
+    contain: content;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.header {
+    margin-left: 16px;
+    width:100%;
+    }
+     
+span.icon {display:inline-block}
+span.text {display:none}
+
+.banner ul {
+    display: flex;
+    margin-left: 57%;
+    margin-top: 0;
+    justify-content: flex-end;
+    }
+
+.banner li:hover {
+    border-top: 3px solid #0065FC;
+    padding-top: 15px;
+    border-radius: 0;
+    }
+
+.logo {
+    margin-left: 0;
+    }
+
+.banner li {
+    border-top: 3px solid #F2F2F2;
+    padding-top: 15px;
+    border-radius: 0;
+    }
+
+    
+.section-filtres #presentation-filtres {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 1.5%;
+    margin-left: 0%; 
+
+ }
+
+ .section-filtres  {
+    margin-left: 3%; 
+    display: flex;
+    width: 80%;
+ }
+
+ .section-filtres ul {
+    margin-left : 0;
+ }
+    /*MAIN*/
+    
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+    
+/*HEBERGEMENTS*/
+       
+.hebergements {
+    display: flex;
+    order: 0;    
+    flex-direction: row;
+    width: 60%;
+    margin-left: 1%;
+    margin-block-start: 12px;
+    margin-top: 0;
+    height: 751px;
+    }
+
+.hebergements-cards {
+    height: 639px;
+    gap: 44px;
+    }
+
+.hebergements h3 {
+    margin-top: 3%;
+    }
+    
+/*LES PLUS POPULAIRES*/
+    
+.lespluspopulaires a {
+    width: 100%;
+    height: 33%;
+    }
+
+.lespluspopulaires {
+    display: flex;
+    flex-direction:column;
+    width: 27%;
+    margin-left: 2%;
+    margin-right: 3%;
+    }
+
+.lespluspopulaires .card {
+    max-width:170px;
+    max-height: 200px; 
+    }
+
+.lespluspopulairescards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;     
+    }
+
+.lespluspopulaires .resize {
+    width: 179px;
+    height: 103.66px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 0%;
+    }
+
+.lespluspopulaires .card-container {
+    max-height: 220px;
+    width: 250px;
+    }
+
+.lespluspopulaires .card-etoiles {
+    color: #0065FC;
+    font-size: 10px;
+    margin-top: 4%;
+    margin-bottom: 10px;
+    }
+
+    
+.rowone h3 {             
+    margin: 0%;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3px;
+    margin-top:3%;
+    }
+
+.rowone i {
+    margin-top: 10px;
+    }
+      
+.lespluspopulaires .card {
+    display: flex;
+    flex-direction:column;
+    width: 180px;
+    margin-bottom: 11px;;
+    height: 74%;
+    margin-left: 3px;
+    margin-top: 4px;  
+    }
+
+.card-container h4, h5 {
+    margin-top: 0;
+    }
+ 
+.lespluspopulaires .card-container {
+    height: 220px;
+    width: 151px;
+    margin-top: 3px;
+    }
+
+/*ACTIVITES*/
+.activites-cards {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    margin-left: 7%;
+    gap: 7%; 
+    width:90%;
+    }
+
+.card-double {
+    display: flex;
+    flex-direction:row;
+    gap: 11%; 
+    }
+
+.activites .cardVertical  {
+    box-shadow: 0px 2px 5px #999;
+    width: 205px;
+    height: 127.255px;
+    margin-bottom: 5%;
+  
+    }
+
+.cardVertical img {
+    width: 205px;
+    height: 97.56px;    
+    }
+
+#parcNationalDesCalanques .cardVertical{
+    display: flex;
+    flex: 1;
+    }
+
+
+.cardVertical a {
+    width: 221px;
+    height: 138px;
+    }
+
+
+/*FOOTER*/
+.blocktext {
+    margin-left: 6%;
+    margin-right: 12%;
+    margin-top: 1%;
+    height: 138px;
+    }
+    
+footer p {
+    margin-left: 2%;
+    }
+
 }
 
 
+@media  (min-width: 768px) and (max-width: 810px)
+{
+/*HEADER*/
 
 
 
+.header {
+    margin-left: 16px;
+    width: 100%;
+    }
 
+    span.icon {display:inline-block}
+    span.text {display:none}
+
+    
+.banner li {
+    border-top: 3px solid #F2F2F2;
+    padding-top: 15px;
+    border-radius: 0;
+    }
+    
+.banner li:hover {
+    border-top: 3px solid #0065FC;
+    padding-top: 15px;
+    border-radius: 0;
+    }
+    
+    
+.banner ul {
+    margin-left: 20%;
+    }
+    
+.banner ul li {
+    padding-left: 10%;
+    border-top: none;
+    }
+        
+.banner ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 50%;
+    margin-top: 0;
+    }
+    
+.logo {
+    margin-left: 0;
+    }
+    
+.presentation-filtres {
+    margin-left: 60%;
+    }
+    
+.section-filtres #presentation-filtres {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 2%;
+    margin-left: 0%; 
+}
+    
+.section-filtres  {
+    margin-left: 1.5%; 
+    }
+    
+.section-filtres ul {
+    margin-left : 0;
+    }
+
+
+button {
+    border-radius: 10px 10px 10px 10px;
+    font-size: 12px;
+    display: inline-block;
+    color: white;
+    background: #0065FC;
+    border: none;
+    height: 10px;
+    width: 30%;
+    padding-bottom: 24.000999999999998px;
+    padding-top: 7px;
+    font-weight: 900;
+    align-items: center;
+    background-position: inherit;
+    contain: content;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    }
+/*MAIN*/
+    
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+    
+/*HEBERGEMENTS*/   
+.hebergements {
+    display: flex;
+    order: 0;    
+    flex-direction: row;
+    width: 60%;
+    margin-left: 1%;
+    margin-block-start: 12px;
+    margin-top: 0;
+    height: 751px;
+    }
+
+.hebergements-cards {
+    height: 639px;
+    gap: 44px;
+    }
+
+.hebergements h3 {
+    margin-top: 3%;
+    }
+    
+/*LES PLUS POPULAIRES*/
+.lespluspopulaires a {
+    width: 100%;
+    height: 33%;
+    }
+   
+.lespluspopulaires {
+    display: flex;
+    flex-direction:column;
+    margin-left: 2%;
+    margin-right: 3%;
+    }
+
+.lespluspopulairescards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    height:93%;   
+    }
+
+.lespluspopulaires .resize {
+    width: 179px;
+    height: 103.66px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 0%;
+    }
+
+.lespluspopulaires .card-container {
+    height: 114px;
+    width: 151px;
+    }
+
+.lespluspopulaires .card-etoiles {
+    color: #0065FC;
+    font-size: 10px;
+    margin-top: 8%;
+    margin-bottom: 10px;
+    }
+
+    
+.rowone h3 {             
+    margin: 0%;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3px;
+    margin-top:3%;
+    }
+
+.rowone i {
+    margin-top: 10px;
+    }
+      
+.lespluspopulaires .card {
+    display: flex;
+    flex-direction:column;
+    max-width: 170px;
+    margin-bottom: 11px;;
+    height: 168px;
+    margin-left: 3px;   
+    }
+
+.card-container h4, h5 {
+    margin-top: 0;
+    }
+ 
+.lespluspopulaires .card-container {
+    height: 100px;
+    width: 151px;
+    margin-top: 3px;
+    }
+
+ /*ACTIVITES*/
+.activites-cards {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    margin-left: 5%;
+    gap:5%;   
+    }
+
+.activites h3 {
+    width:90%;
+}
+.card-double {
+    display: flex;
+    flex-direction:row;
+    gap: 10%;     
+    }
+
+.activites .cardVertical  {
+    box-shadow: 0px 2px 5px #999;
+    width: 205px;
+    height: 127.255px;
+    margin-bottom: 5%;  
+    }
+
+.cardVertical img {
+    width: 205px;
+    height: 97.56px;
+    }
+
+#parcNationalDesCalanques .cardVertical{
+    display: flex;
+    flex: 1;
+    }
+
+   
+    
+.activites-cards  {
+    display: flex;
+    width:90%;     
+    }
+
+.cardVertical a {
+    width: 221px;
+    height: 138px;
+    }
+
+
+
+/*FOOTER*/
+ .blocktext {
+        margin-left: 7%;
+        margin-right: 10%;
+        margin-top: 3%;
+    }
+  
+}
 
 
 /*MOBILE*/
-@media (min-width:1px) and (max-width: 894px)
+@media (min-width: 320px) and (max-width: 767px)
 {
-  
-  .logo 
-  {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 45%;
-  }
 
-  .info {
+    
+button {
+    border-radius: 10px 10px 10px 10px;
+    font-size: 12px;
+    display: inline-block;
+    color: white;
+    background: #0065FC;
+    border: none;
+    height: 10px;
+    width: 30%;
+    padding-bottom: 24.000999999999998px;
+    padding-top: 7px;
+    font-weight: 900;
+    align-items: center;
+    background-position: inherit;
+    contain: content;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.body {
+    align-content:center;
+    height:100%;
+    }
+
+/*HEADER*/
+    header{
+    width: 100%;
+    }
+
+span.icon {display:inline-block}
+span.text {display:none}
+    
+
+
+
+.banner li:hover  {
+    text-decoration: none;      
+    text-decoration-thickness: 3px;
+    border-top: none;
+    border-bottom: 3px solid #0065FC;
+    padding-top: 0;
+    padding-bottom: 0;
+    }
+
+form {
+    height: auto;
+    width: 300px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    contain: content;
+    margin-left: 5%;
+    }
+    .banner ul li {
+        padding-left: 10%;
+        border-top: none;
+        }
+
+.banner li {
+    width: 50%;
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom: 20px;
+    width: 50%;
+    border-top: 0;
+    padding-top: 0;
+    }
+     
+.section-filtres #presentation-filtres {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5%;
+    margin-left: 0%; 
+    }
+
+.section-filtres  {
+    margin-left: 3%; 
+    }
+
+.section-filtres ul {
+    margin-left : 0;
+    }
+
+.section-filtres ul {
+    width:51%;
+    }
+    
+.logo {
+    display: flex;
+    align-content: center;
+    margin-left: 45%;
+    }
+    
+.info {
     display:flex;
     display: inline-flex;
-  }
-
-    .banner ul {
-        display: flex;
-        justify-content: flex-start;
-        padding: 0px;
+    width:auto;
     }
 
-    .banner .ul {
-        color: #0065FC;
-      
-
+.banner ul {
+    display: flex;
+    justify-content: center;
+    color: #0065FC;  
+    margin-right: 0;
+    width: auto;
+    padding: 0;
     }
 
-    .lespluspopulaires{
-        display: flex;
-        flex-direction: column;
-        order: -1;    
-        width: 80%;
-      
+.banner ul li  {
+    width: 50%;
+    padding-left: 14%;
     }
-
-        .lespluspopulairescards {
-            display: flex;
-            
-        }
-
-    .hebergements {
-        display: flex;
-        order: 0;    
-        flex-direction: column;
-        width: 80%;
-        align-items: center;
-    }
-
-            
-        .hebergements .card {
-             width: 300px;
-            height: 200px;
-            }
-
-        .hebergements .card .resize {
-            width: 283px;
-            height: 110px;
-            border-radius: 10 10 10 10;
-        }
-
-        .hebergements .card-container {
-            display: flex;
-            justify-content: stretch;
-            margin: 0px;
-            margin-left: 5%;
-        }
-
-
-
-
-
-
-
-    .activites {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 80%;
-        align-items: center;
-        margin-left: 0%;
-       
-    }
-    .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       
-       
-        
-        
-    }
-
-
-
-    .activites #cardvertical {
-        width: 283px;
-        height: 120px;
-        margin-left: 15%;
-        
-
-    }
-
-    .activites .classtitle {
-        width: 283px;
-        height: 120px;
-        contain: content;
-    }
-
-    .vertical {
-        width: 283px;
-        height: 90px;
-        object-fit: cover;
-        
-
-    }
-
-    #cardfortdepomegues .classtitle{
-        width: 283px;
-        height: 90px;
-
-     }
-
-   
-     #fortdepomegues {
-        width: 283px;
-        height: 90px;
-        object-fit: cover;
-     }
-
-     #cardilesdufrioul .classtitle {
-        width: 283px;
-        height: 90px;
-        margin-bottom: 5%;
-    }
-
-     #ilesdufrioul {
-        width: 283px;
-        height: 90px;
-    }
-        .ilesdufrioul {
-            width: 283px;
-            height: 90px;
-        }
-
-    #cardnotredamedelagarde .card {
-        width: 283px;
-        height: 90px;
-     }
-
-     #notredamedelagarde {
-        width: 283px;
-        height: 90px;
-        object-fit: cover;
-     }
-
-    #parclongchamp {
-        width: 283px;
-        height: 90px;
-        object-fit: cover;
-    }
-
     
 
-
-  nav .section-filtres {
+    
+nav .section-filtres {
     display: flex;
     flex-direction: column;
-  }
-
-  .banner {
+    }
+    
+.banner {
     display: flex;
     flex-direction: column;
-  }
-
-  button {
+    margin-right: 0;
+    }
+    
+button {
     width: 30px;
-  }
-  span.icon {display:inline-block}
-  span.text {display:none}
-
-
-  /*aqui intento que el i de info y su texto se queden uno al lado del otro cuando la talla se reduce*/
-  .info li {
+    }
+      
+      /*aqui intento que el i de info y su texto se queden uno al lado del otro cuando la talla se reduce*/
+.info li {
     display: inline-block;
     display: inline-flex;
-  }
-
-  .resize {
+    }
+    
+.resize {
     width: 400px;
     height: 200px;
-
-  }
+    }
     
+header {
+    margin-left: 0%;
+    }
+ 
+        
 
- 
-  .footer {
-    display: flex;
+.banner li a {
+    height: 15px;
+    width:100px;
+    }
+    
+li .overline-box {
+    height: 1px;
+    width:100px;
+    }
+      
+.banner a:link { 
+    text-decoration:none;
+    }
+
+/*para anular el borde de arriba y anadir lo que hace falta*/
+.banner a:hover .overline-box {
+    color: #0065FC;
+    border-bottom: 2px solid #0065FC;
+    border-top: 0px solid #0065FC;
+    padding: 10px 70px;
+    }
+
+/*MAIN*/
+main {
+    margin-left: 0%;
+    align-content: center;
+    margin-right: 0px;
+    width: 100%;   
     flex-direction: column;
-    align-items: center;
- 
-  }
+    align-items: center;   
+    }
 
   
+/*HEBERGEMENTS*/
 
-   }
+.hebergements {
+    display: flex;    
+    flex-direction: column; 
+    background-color:white;
+    margin-right: 0;
+    width:88%;
+    height: 100%;
+    justify-content: center;
+    margin-left: 0%;
+    }
+     
+.hebergements .cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    }
 
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-around;
+    width: 88%;
+    height:1288px;
+    margin-left: 7%;     
+    }
+            
+.hebergements .card {
+    width: 300px;
+    height: 200px;
+    }
+
+.hebergements .card .resize {
+    width: 283px;
+    height: 110px;
+    border-radius: 20px 20px 4px 4px;
+    }
+               
+.hebergements h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.hebergements .card-container {
+    display: flex;
+    justify-content: stretch;
+    margin: 0px;
+    margin-left: 5%;
+    }
+
+
+ /*LES PLUS POPULAIRES*/
+.rowone i {
+    margin-top: 15px;;
+    }
+    
+
+.lespluspopulaires{
+    display: flex;
+    flex-direction: column;
+    order: -1;    
+    width: 100%;
+    align-items: center;
+    background-color: #F2F2F2;
+    margin-left: 3%;
+    border-radius: 0;
+    width:96%;
+}
+
+.lespluspopulairescards {
+    display: flex;
+    flex-direction: column;
+    contain: none;
+    }
+
+.lespluspopulaires .resize {
+    width: 100px;
+    height: 98.66px;
+    }
+
+.lespluspopulaires .card {
+    margin-left: 0;
+    }
+
+.rowone  {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    width:90%;
+}
+   
+/*ACTIVITES*/
+.activites {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;  
+    }
+   
+
+/*este pone las cards de activites en vertical en version mobil*/
+.activites-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: baseline;
+    margin-left:1px;
+    
+    
+}
+
+.activites .card {
+    display: flex;
+    margin: 10px;
+    flex-direction: column; 
+    
+}
+
+
+
+  
+.activites .cardVertical {
+    width: 300px;
+    height: 210px;
+}  
+  
+.activites .classtitle {
+    width: 283px;
+    height: 120px;
+    contain: content;
+}
+
+   
+
+#cardfortdepomegues .classtitle{
+    width: 205px;
+    height: 97.56px;
+    margin-left: 15%;
+}
+
+   
+/*imagenes de todas las cards de activites*/
+#fortdepomegues {
+    width: 205px;
+    height: 97.56px;
+    object-fit: cover;
+}
+
+#cardilesdufrioul .classtitle {
+    width: 205px;
+    height: 97.56px;
+    }
+
+#ilesdufrioul {
+    width: 205px;
+    height: 97.56px;
+    }
+     
+
+#cardnotredamedelagarde .card {
+    width: 205px;
+    height: 97.56px;
+    }
+
+#notredamedelagarde {
+    width: 205px;
+    height: 97.56px;
+    object-fit: cover;
+    }
+
+#parclongchamp {
+    width: 205px;
+    height: 97.56px;
+    object-fit: cover;  
+    }
+
+    
+.cardVertical {
+    margin-left: 3%;
+    }
+    
+/*para las imagenes de todas las cards*/
+.activites .vertical {
+    width: 300px;
+    height: 172.255px;
+    border-radius: 10px 10px 0px 0px ;
+ }
+    
+#cardpomegues .card-image img {
+    width: 300px;
+    height: 172.255px;
+    border-radius: 10px 10px 0px 0px ;
+    }
+    
+#cardilesdufrioul .card-image img {
+    width: 300px;
+    height: 172.255px;
+    border-radius: 10px 10px 0px 0px ;
+    }
+    
+#cardnotredamedelagarde .card-image img {
+    width: 300px;
+    height: 172.255px;
+    border-radius: 10px 10px 0px 0px ;
+    }
+    
+#cardparclongchamp .card-image img {
+    width: 300px;
+    height: 172.255px;
+    border-radius: 10px 10px 0px 0px ;
+    }
+    
+/*background de todas las card de activites*/
+.activites #cardparclongchamp  {
+    width: 300px;
+    height: 210px;
+    border-radius: 10px 10px 10px 10px;
+    }
+      
+.activites #cardnotredamedelagarde {
+    width: 300px;
+    height: 210px;
+    border-radius: 10px 10px 10px 10px;
+    }
+
+.activites #cardilesdufrioul {
+    width: 300px;
+    height: 210px;
+    border-radius: 10px 10px 10px 10px;
+    }
+    
+.activites #cardpomegues {
+    width: 300px;
+    height: 210px;
+    border-radius: 10px 10px 10px 10px;
+    }
+    
+        
+
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 452px;
+    align-content: center;
+ }
+      
+.blocktext {
+    margin-left: 3%;
+    margin-right: 14%;
+    margin-top: 3%;
+    height: 138px;
+}
+    
+footer p {
+    margin-left: 2%;
+    width: 100%;
+    font-size: 12px;
+}
+
+#mediumblocktext {
+    height: 100px;  
+}
+    
+ }
