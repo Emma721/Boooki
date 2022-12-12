@@ -1,12 +1,20 @@
 
-
+/*bordure du champ de texte de la zone de recherche */
+*{
+    border : 1px solid blue; 
+}
+/*icone des filtres est un rond*/
+.fa-child-reaching:before  {
+    padding-right : 1px;
+    padding-left : 1px;
+}
 
 body {
     font-family:"raleway"; 
     margin: 0px ;
     margin-top: 0%;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     margin-left: 0%;
     flex-direction: column;
     
@@ -14,7 +22,7 @@ body {
 
 html{
     width: 100%;
-    height:100%;
+    /*height:100%;*/
   }
 
   /*this is what makes the text inside the search bar appear when not used*/
@@ -35,14 +43,22 @@ html{
  {
      font-size:12px;
      outline: white;
-     margin-top: 1px;
+
      
  }
 
-form {
-    margin-left: 3%;
-  }
+ /* seules les cartes sont cliquables, pas l'espace autour */
+.hebergements a {
 
+    border-radius : 20% 20% ;
+    border: 2px solid red;
+}
+
+.lespluspopulaires a {
+
+    border-radius : 20% 20% ;
+    border: 2px solid red;
+}
 
  
 /*TITLES & P*/
@@ -53,7 +69,7 @@ h1 {
     font-size :18px;
     display:flex;
     flex-wrap: wrap;
-    margin-left: 3%;
+
     }
 
 h2 {
@@ -64,7 +80,7 @@ h2 {
     margin-bottom: 25px;
     display:flex;
     flex-wrap: wrap;
-    margin-left: 3%;
+
     }
 
   
@@ -73,7 +89,7 @@ h3 {
     font-weight: 700;
     font-size : 15px;
     padding: 0px;
-    margin-left: 3%;
+
    
     }
 
@@ -92,7 +108,7 @@ h5 {
 
 p {
     color:black;
-    font-size: 10px;
+    font-size: 12px;
     }
 
 
@@ -107,7 +123,7 @@ img {
 
  /*HEADER*/
 header {   
-    width:90%;
+    width:100%;
 }
 .banner {
     display: flex;
@@ -125,11 +141,11 @@ header {
     }
                   
 .banner ul li {
+    display:flex;
+    justify-content: flex-end;
     font-size: 13px;
-    margin-left: 0px;
+
     width: 50%;
-    padding-left: 33px;
-    padding-right: 13px; 
     border-top: 3px solid white;
     /*padding-top: 20px;*/
     border-radius: 0;    
@@ -139,7 +155,7 @@ header {
     max-width: 68px;
     max-height:30px ;
     padding-left:0%;
-    padding-left: 3%;
+    padding-left: 1%;
     margin-top: 1%;
     }
 
@@ -202,10 +218,10 @@ header ul {
 }
 
 .search-bar {
-    width: 38%;
+    width: 100%;
     margin-left: 0px;
     border-radius: 20px 20px 20px 20px ;
-    height: 8%;
+    height: 12%;
     width:60%;
     display: inline-block;
     
@@ -213,13 +229,13 @@ header ul {
 
 .search-bar input {
     border: none;
-    width:35%;
-    height: 29px;
+    width:29%;
+    height: 100%;
     font-size:11pt;
     margin-right: 0;   
     font-weight: 900;
     display: inline-flex;
-    margin-left:10px;
+    border : 1px solid  rgba(242,242,242,1);
    
     
 }
@@ -246,7 +262,7 @@ button {
     background: #0065FC;
     border: none;
     border-radius: 0px 10px 10px 0px ;
-    height: 10px;
+    height: 100%;
     width: 30%;
     padding-bottom: 24.000999999999998px;;
     padding-top: 7px;
@@ -267,11 +283,13 @@ text {
 
 form {
     height:auto;
-    width: 300px;
+    width: 90%;
     font-size: 10px;
     display: flex;
     flex-direction: row;
     contain: content;
+    height: 95%;
+
  
 }
 
@@ -282,6 +300,7 @@ form {
 
 .section-info li p {
     width: 100%;
+    font-size: 13px;
 }
 
 .info i {
@@ -304,8 +323,6 @@ form {
     contain: content;
     display: inline-block;
     justify-content: stretch;
-    width: 100%;
-    margin-left: 3%;
     
 }
 
@@ -406,9 +423,12 @@ main {
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-left: 0%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     margin-top: 0%;
+    padding-left : 2%;
+    padding-right : 2%;
 }
 
 .etoiles {
@@ -430,7 +450,6 @@ main {
 .hebergements .card {
     width: 180px; 
     height: auto;
-    margin-bottom:10px;
     contain: content;
     box-shadow: 0px 2px 5px #999;
    
@@ -443,6 +462,7 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
+    gap: 3%;
     align-content: flex-start;
     justify-content: space-around;
    
@@ -486,14 +506,15 @@ main {
     display: flex; 
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: rgba(242,242,242,1);
+    background-color: rgb(14, 108, 210);
+   /*background-color: rgba(242,242,242,1); c'est la bonnz couleur mais c'est trop clair pour l"ecran */
     border: 3px rgba(242,242,242,1);
     border-radius: 20px;
     width: 60%;
     align-content: flex-start;
     height: 50%;
-    margin-right: 2.5%;
-    margin-left: 3%;
+
+
     }
 
 .hebergements h1 {
@@ -552,7 +573,7 @@ main {
     border: 3px rgba(255,255,255,1);
     border-radius: 20px;
     justify-content:stretch;
-    margin-left: 5% ; 
+ 
     padding: 10px;
     width: 30%;
     box-shadow: 0px 2px 5px #999; 
@@ -562,36 +583,35 @@ main {
  .lespluspopulaires .card {
     display: flex;
     flex-direction: row;
-    height: 100px;
-    width: 250px;
+    height: 160px;
+    width: 300px;
     padding: 4px;
-    margin-bottom: 10%;
     flex-grow: 10; 
  }
 
 .lespluspopulairescards {
     display: flex;
     flex-wrap: wrap;
+    gap :3%;
     justify-content: space-around; /*creo que esto deberias quitarlo, q no sirve para grandes pantallas*/
     justify-content: flex-start;
-    contain: content;
  }
 
 
 .lespluspopulaires .card-etoiles { /*para el aspecto y la posicion de las estrellas*/
     color: #0065FC;
     font-size: 10px;
-    margin-top:40%;
+    margin-top:46%;
     margin-bottom: 1%;   
     }
 
 .rowone   { /*esta es la que hace que se quede alineado con los iconos !*/
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    width: 87%;
+    justify-content: space-between;
+    margin-top : 2%;
+
     }
 
 .rowone i {
@@ -606,13 +626,13 @@ main {
 
 .lespluspopulaires .card {
     flex-direction: row;
-    max-height: 169px;
+    max-height: 113px;
     max-width: 288px;
     }
         
 .lespluspopulaires .resize {
     max-width: 171px;
-    max-height: 118.66px;
+    height: 105.66px;
     }
 
 .lespluspopulaires {  
@@ -622,9 +642,11 @@ main {
     justify-content: flex-start;
     width:30%;
     margin-right: 0;
-    background-color: rgba(242,242,242,1);
+    background-color: rgb(14, 108, 210);
+    /*background-color: rgba(242,242,242,1);*/
     border: 3px rgba(242,242,242,1);
     border-radius: 20px;
+    padding : 20px;
     }
          
 /*FIN LES PLUS POPULAIRES*/
@@ -642,7 +664,7 @@ main {
     background-color:  rgba(255,255,255,1);
     border: 3px rgba(255,255,255,1);
     border-radius: 20px;
-    justify-content:space-around;
+    justify-content:space-between;
     object-fit: cover;
     margin:1px ;  
 }
@@ -685,26 +707,27 @@ main {
 .activites  #cardpomegues { 
     box-shadow: 0px 2px 5px #999;
     width: 205px;
-    height: 130px;
+    height: 164px;
     margin-bottom: 5%;
     
 }
 
  #cardpomegues .card-image img {
     width: 205px;
-    height: 97.56px;
+    height:125.56px;
     } 
 
 #cardilesdufrioul .card-image img {
-    width: 206px;
-    height: 98.56px;
+    width: 203px;
+    height: 64.56px;
     }
     
 
 .activites  #cardilesdufrioul { 
     box-shadow: 0px 2px 5px #999;
     width: 205px;
-    height: 130px;
+    height: 101px;
+    margin-top:-1%;
     
 }
 
@@ -742,6 +765,7 @@ main {
     gap: 0px;
     padding: 0px;
     margin-bottom: 5%;
+    width: 100%;
     
 }
 
@@ -827,16 +851,15 @@ footer {
     margin-left: 0%;
     background-color: rgba(242,242,242,1);
     border: 3px rgba(242,242,242,1);
-    width: 100%;
-    margin-bottom: 0%;
+    width : 95.7%;
+    padding: 2%;
     }
 
 /*esto es para crear los espacios entre los diferentes bloques de texto en el footer*/
 .blocktext {
-    margin-left: 6%;
+ 
     margin-right: 14%;
     margin-top: 1%;
-    height: 138px;
 }
 
 footer p {
@@ -870,7 +893,9 @@ footer p {
     }
 
     
-
+.main {
+    margin-right: 2.5%;
+}
 .section-filtres {
     margin-left: 1%;
     width: 80%;
@@ -881,7 +906,7 @@ footer p {
     border-top: 3px solid #F2F2F2;
     padding-top: 15px;
     border-radius: 0;
-    padding-right: 33px;
+
     }
 
 .banner li:hover {
@@ -900,13 +925,15 @@ footer p {
 .banner{
    margin-right: 0px;
  } 
+
+
         
 /*HEBERGEMENTS*/
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap:14%;
+    gap:7%;
     height:431px;
     }
 
@@ -918,13 +945,18 @@ footer p {
 /*LES PLUS POPULAIRES*/
 .lespluspopulaires .card {
     max-width: 400px;
-    margin-left: 50px;
+    margin : 0px;
+   /* margin-left: 50px;*/
     }
 
+
+
 .lespluspopulaires .resize {
-    width: 100px;
-    height: 98.66px;
+    width: 125px;
+    max-height : 130.66px;
     }
+
+
 
 .rowone {
     display: flex;
@@ -1023,18 +1055,14 @@ span.text {display:inline-block}
     border-radius: 0;
     }
 
-.banner ul {
-    margin-left: 69%;
-    }
+
 
 .logo {
     margin-left: 0;
-    margin-top:0.5%;
+    margin-top:2%;
     }
 
-.search-bar {
-    margin-left: 1%;
-    }
+
 
 button {
     border-radius: 0px 10px 10px 0px;
@@ -1043,7 +1071,7 @@ button {
     color: white;
     background: #0065FC;
     border: none;
-    height: 10px;
+    height: 100%;
     width: 30%;
     padding-bottom: 24.000999999999998px;
     padding-top: 7px;
@@ -1056,7 +1084,7 @@ button {
 }
 
 .section-filtres {
-    margin-left: 1%;
+    margin-top: 1%;
     width:80%;
     display: flex;
     }
@@ -1090,7 +1118,7 @@ button {
 }
 
 .hebergements {
-    padding:10px;
+    padding:20px;
     margin-right: 0;
     }
 
@@ -1106,12 +1134,10 @@ button {
     margin-top: 3%;
     }
 
-.lespluspopulaires {
-    margin-left: 30px;
-    }
+
 
 .lespluspopulaires .card {
-    height: 77%;
+    height: 93%;
     min-width:263px;
     max-width: 363px;
     }
@@ -1147,7 +1173,7 @@ button {
     color: white;
     background: #0065FC;
     border: none;
-    height: 10px;
+    height: 100%;
     width: 30%;
     padding-bottom: 24.000999999999998px;
     padding-top: 7px;
@@ -1187,9 +1213,8 @@ span.text {display:none}
     }
  
 .section-filtres {
-    margin-left: 1%;
-    width:80%;
     display: flex;
+    margin-top : 1%;
 }
 
 .section-filtres #presentation-filtres {
@@ -1207,13 +1232,17 @@ span.text {display:none}
 }
 
 form {
-    height: auto;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     font-size: 10px;
     display: flex;
     flex-direction: row;
     contain: content;
-    margin-left: 5%;
+
+    }
+
+.input {
+    height : 100%;
     }
 
 .banner li {
@@ -1235,7 +1264,7 @@ form {
     order: 0;    
     flex-direction: row;
     width: 60%;
-    margin-left: 1%;
+
     margin-block-start: 12px;
     margin-top: 0;
     height: 751px;
@@ -1261,8 +1290,7 @@ form {
     display: flex;
     flex-direction:column;
     width: 27%;
-    margin-left: 2%;
-    margin-right: 3%;
+
 }
 
 .lespluspopulaires .card {
@@ -1308,8 +1336,7 @@ form {
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 3px;
-    margin-top:3%;
+
     }
 
 .rowone i {
@@ -1333,9 +1360,8 @@ form {
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: stretch;
-    margin-left: 12%;
-    gap: 7%;  
-    width:86%;   
+      gap: 7%;  
+    width:100%;   
     }
 
 .activites h3 {
@@ -1373,10 +1399,9 @@ form {
 
 /*FOOTER*/
 .blocktext {
-    margin-left: 6%;
-    margin-right: 14%;
+
     margin-top: 1%;
-    height: 138px;
+
     }
     
 footer p {
@@ -1399,7 +1424,7 @@ button {
     color: white;
     background: #0065FC;
     border: none;
-    height: 10px;
+    height: 100%;
     width: 30%;
     padding-bottom: 24.000999999999998px;
     padding-top: 7px;
@@ -1457,9 +1482,9 @@ span.text {display:none}
  }
 
  .section-filtres  {
-    margin-left: 3%; 
     display: flex;
     width: 80%;
+    margin-top:2%;
  }
 
  .section-filtres ul {
@@ -1480,7 +1505,6 @@ span.text {display:none}
     order: 0;    
     flex-direction: row;
     width: 60%;
-    margin-left: 1%;
     margin-block-start: 12px;
     margin-top: 0;
     height: 751px;
@@ -1506,8 +1530,6 @@ span.text {display:none}
     display: flex;
     flex-direction:column;
     width: 27%;
-    margin-left: 2%;
-    margin-right: 3%;
     }
 
 .lespluspopulaires .card {
@@ -1618,10 +1640,9 @@ span.text {display:none}
 
 /*FOOTER*/
 .blocktext {
-    margin-left: 6%;
-    margin-right: 12%;
+
     margin-top: 1%;
-    height: 138px;
+
     }
     
 footer p {
@@ -1711,7 +1732,7 @@ button {
     color: white;
     background: #0065FC;
     border: none;
-    height: 10px;
+    height: 100%;
     width: 30%;
     padding-bottom: 24.000999999999998px;
     padding-top: 7px;
@@ -1736,7 +1757,6 @@ button {
     order: 0;    
     flex-direction: row;
     width: 60%;
-    margin-left: 1%;
     margin-block-start: 12px;
     margin-top: 0;
     height: 751px;
@@ -1760,15 +1780,13 @@ button {
 .lespluspopulaires {
     display: flex;
     flex-direction:column;
-    margin-left: 2%;
-    margin-right: 3%;
     }
 
 .lespluspopulairescards {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    height:93%;   
+    height:92%;   
     }
 
 .lespluspopulaires .resize {
@@ -1887,7 +1905,9 @@ button {
 @media (min-width: 320px) and (max-width: 767px)
 {
 
-    
+main {
+    padding : 0;
+}
 button {
     border-radius: 10px 10px 10px 10px;
     font-size: 12px;
@@ -1895,7 +1915,7 @@ button {
     color: white;
     background: #0065FC;
     border: none;
-    height: 10px;
+    height: 100%;
     width: 30%;
     padding-bottom: 24.000999999999998px;
     padding-top: 7px;
@@ -1930,16 +1950,27 @@ span.text {display:none}
     border-bottom: 3px solid #0065FC;
     padding: 0;
     }
+.search-bar {
+    width : 100%;
 
+}
+
+.search-bar input{
+    width : 82.8%;
+
+}
 form {
-    height: auto;
-    width: 300px;
+    height : 40px;
+    width: 100%;
     font-size: 10px;
     display: flex;
     flex-direction: row;
     contain: content;
-    margin-left: 5%;
+    margin-right : 0;
+
     }
+
+
     .banner ul li {
         padding-left: 10%;
         border-top: none;
@@ -2018,7 +2049,7 @@ nav .section-filtres {
     }
     
 button {
-    width: 30px;
+    width: 45px;
     }
       
       /*aqui intento que el i de info y su texto se queden uno al lado del otro cuando la talla se reduce*/
@@ -2098,12 +2129,10 @@ main {
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     align-content: flex-start;
     justify-content: space-around;
-    width: 88%;
-    height:1288px;
-    margin-left: 7%;     
+     
     }
             
 .hebergements .card {
@@ -2119,7 +2148,7 @@ main {
                
 .hebergements h3 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 3%;
 }
 
@@ -2140,13 +2169,14 @@ main {
 .lespluspopulaires{
     display: flex;
     flex-direction: column;
-    order: -1;    
+    order: 0;    
     width: 100%;
     align-items: center;
-    background-color: #F2F2F2;
+    background-color: #6d82ee;
+    /*background-color: #F2F2F2;*/
     margin-left: 0%;
     border-radius: 0;
-    width:100%;
+
 }
 
 .lespluspopulairescards {
@@ -2156,8 +2186,8 @@ main {
     }
 
 .lespluspopulaires .resize {
-    width: 100px;
-    height: 98.66px;
+    width: 129px;
+    height: 129.66px;
     }
 
 .lespluspopulaires .card {
@@ -2324,7 +2354,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 100%;
     height: 452px;
     align-content: center;
  }
